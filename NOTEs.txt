@@ -1,0 +1,29 @@
+Open up your terminal and bootstrap a new React app with Vite:
+
+npm create vite@latest name-of-your-project -- --template react
+# follow prompts
+cd <your new project directory>
+npm install react-router-dom # always need this!
+npm install localforage match-sorter sort-by # only for this tutorial.
+npm run dev
+
+
+>npm create vite@latest router-dom-vite --template react
+
+> npx
+> create-vite router-dom-vite react
+
+√ Select a framework: » React
+√ Select a variant: » JavaScript
+
+Scaffolding project in C:\Users\HP\Desktop\router-dom-vite...
+
+Done. Now run:
+
+  cd router-dom-vite
+  npm install
+  npm run dev
+
+
+  git remote add origin https://github.com/SamboHassan/react-dom-vite-demo.git
+git push -u origin main
