@@ -20,10 +20,61 @@ Scaffolding project in C:\Users\HP\Desktop\router-dom-vite...
 
 Done. Now run:
 
-  cd router-dom-vite
-  npm install
-  npm run dev
+cd router-dom-vite
+npm install
+npm run dev
 
 
-  git remote add origin https://github.com/SamboHassan/react-dom-vite-demo.git
+git remote add origin https://github.com/SamboHassan/react-dom-vite-demo.git
 git push -u origin main
+
+
+
+// import { StrictMode } from 'react'
+// import { createRoot } from 'react-dom/client'
+// import App from './App.jsx'
+// import './index.css'
+
+// createRoot(document.getElementimport React, { StrictMode } from "react";
+// import { render } from "react-dom";
+// import { createRoot } from "react-dom/client";
+// ById('root')).render(
+//   <StrictMode>
+//     <App />
+//   </StrictMode>,
+// )
+
+
+Create and render a browser router in main.jsx
+
+import * as React from "react";
+import * as ReactDOM from "react-dom/client";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import "./index.css";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <div>Hello world!</div>,
+  },
+]);
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>
+);
+
+
+
+The Root Route
+Let's add the global layout for this app.
+
+👉 Create src/routes and src/routes/root.jsx
+
+mkdir src/routes
+touch src/routes/root.jsx
+
